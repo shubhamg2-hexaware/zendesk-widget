@@ -1,4 +1,4 @@
-var zChat = require('https://dev.zopim.com/web-sdk/latest/web-sdk.js');
+var zChat = require('./web-sdk');
 
 zChat.init({
     account_key: '5aFslibEbbykmM6aR3wlREgnjA5ubBQe'
