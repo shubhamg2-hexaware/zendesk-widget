@@ -1,6 +1,6 @@
 // Load Up the Dependencies
 var express = require('express');
-// var chat = require('./widget.js');
+ var chat = require('./widget.js');
 //var express_formidable = require('express-formidable')
 //var formidable = require('formidable');
 //var bodyParser = require('body-parser');
@@ -28,7 +28,7 @@ var port = process.env.PORT || 5000;
 
 //Set RESTful routes
 app.get('/', function(req, res) {
-  // chat.sendMessage();
+  chat.sendMessage();
   res.sendFile(__dirname + '/index.html');
 });
 
