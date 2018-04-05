@@ -20,13 +20,13 @@ function myFunction() {
     });
 };
 
-module.exports = {
 
-    "sendMessage": function() {
-        zChat.sendChatMsg('hello', function(err) {
-            if(err) {
-                console.log(err);
-            }
-        });
-    }
+
+"sendMessage": function() {
+    zChat.sendChatMsg('hello', function(err) {
+        if(err) {
+            console.log(err);
+        }
+    });
 }
+
