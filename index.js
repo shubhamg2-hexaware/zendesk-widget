@@ -34,7 +34,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req,res){
   console.log(req.body);
-  console.log(req.incomingMessage.res.req);
+  console.log(req.incomingMessage.res);
 
   res.send("hello");
 })
