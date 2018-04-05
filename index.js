@@ -33,7 +33,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/', function(req,res){
-  console.log(JSON.stringify(req.body));
+  console.log(req);
 })
 // Start the server
 app.listen(port);
