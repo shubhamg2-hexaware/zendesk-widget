@@ -32,6 +32,9 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.post('/', function(req,res){
+  console.log(JSON.stringify(req.body));
+})
 // Start the server
 app.listen(port);
 console.log("Server has booted up successfully.");
