@@ -8,6 +8,7 @@ zChat.init({
 });
 
 zChat.on('connection_update', function(status) {
+    console.log('hello');
     if (status === 'connected') {
         // Start consuming your API here
         console.log("connected");
