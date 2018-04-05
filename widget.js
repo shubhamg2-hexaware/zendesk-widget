@@ -14,6 +14,13 @@ zChat.on('connection_update', function(status) {
         console.log("connected");
     }
 })
+document.getElementById('btn').onclick = function () {
+    zChat.sendChatMsg('hello', function(err) {
+        if(err) {
+            console.log(err);
+        }
+    });
+};
 
 module.exports = {
 
