@@ -10,7 +10,7 @@ zChat.on('connection_update', function(status) {
         // Start consuming your API here
         console.log("connected");
     }
-})
+});
 function myFunction() {
     zChat.sendChatMsg('hello', function(err) {
         if(err) {
