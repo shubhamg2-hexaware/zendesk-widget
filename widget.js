@@ -1,4 +1,6 @@
 //var zChat = require('./web-sdk');
+var fs = require('fs');
+
 zChat.init({
     account_key: '5aFslibEbbykmM6aR3wlREgnjA5ubBQe'
 });
