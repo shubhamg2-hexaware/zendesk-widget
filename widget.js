@@ -20,9 +20,13 @@ function myFunction() {
     });
 };
 
+zChat.on('chat', function(event_data) {
+    if (event_data.type === 'chat.msg') {
+        console.log('chat started');
+    }
+});
 
-
-"sendMessage": function() {
+function sendMessage() {
     zChat.sendChatMsg('hello', function(err) {
         if(err) {
             console.log(err);
