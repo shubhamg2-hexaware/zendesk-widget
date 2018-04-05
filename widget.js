@@ -23,6 +23,7 @@ function myFunction() {
 zChat.on('chat', function(event_data) {
     if (event_data.type === 'chat.msg') {
         console.log('chat started');
+        console.log(event_data.msg);
     }
 });
 
