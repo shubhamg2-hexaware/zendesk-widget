@@ -12,11 +12,11 @@ zChat.on('connection_update', function(status) {
     }
 });
 function myFunction() {
-    zChat.sendChatMsg('hello', function(err) {
+    zChat.sendChatMsg('Hello, I want some help', function(err) {
         if(err) {
             console.log(err);
         } else {
-            console.log('hello');
+            console.log('Message sent by the visitor.');
         }
     });
 };
